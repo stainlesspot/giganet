@@ -1,0 +1,30 @@
+div.non-menu{
+    margin-top: 20px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0f63ff;
+    border: 2px solid black
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    border-right: 2px solid black;
+}
+a:hover:not(.navActive) {
+    background-color: #4fc8ff;
+    color: black;
+}
+.navActive {
+    background-color: #f4ff26;
+    color: black;
+}

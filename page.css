@@ -1,0 +1,14 @@
+h1 {
+    color: #0f63ff;
+}
+body{
+    background-color: white;
+}
+footer{
+    bottom: 0;
+    margin: 3%;
+    text-align: center;
+}
+.tester{
+    border: 1px solid black;
+}

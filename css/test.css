@@ -1,0 +1,36 @@
+.buttonTest{
+    width: 100px;
+    height: 100px;
+    background-image: url(/images/Close%20Window-25%20real.png);
+}
+.circle{
+    background: #2ecc71;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    transform: scale(0);
+    margin-left: 200px;
+}
+.tester:active ~ .circle{
+    animation: enlarge 0.65s linear forwards;
+}
+@keyframes enlarge{
+    100%{transform: scale(2.5)}
+}
+.testerous{
+    animation: changeColor 2s linear infinite;
+}
+.testerous:hover{
+    animation-play-state: paused;
+}
+@keyframes changeColor {
+    0%{
+        background-color: yellow;
+    }
+    50%{
+        background-color: red;
+    }
+    100%{
+        background-color: yellow;
+    }
+}

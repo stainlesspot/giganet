@@ -1,0 +1,184 @@
+tr, td, th{
+    //border: 2px solid black;
+    padding: 15px;
+    //z-index: 100;
+    //position: relative;
+    //overflow: hidden;
+}
+tr{
+    position: relative;
+    overflow: hidden;
+}
+table{
+    border-collapse: separate;
+    width: 200px;
+    padding: 0;
+    //border: 6px solid black;
+    border-radius: 25px;
+    border-spacing: 0;
+}
+th{
+    padding: 5px;
+    background-color: rgb(255, 100, 100);
+    color: white;
+    width: 20px;
+}
+td:not(:last-child){
+    border-right: 1px solid rgb(255, 100, 100);
+    transition: border-color 0.5s linear;
+}
+tr:first-child > th:not(:last-child), tr:nth-child(2) > th{
+    border-right: 1px solid white;
+}
+th{
+    border-bottom: 1px solid white;
+}
+.circle{
+    position: absolute;
+    background-color: #2ecc71;
+    //border-radius: 50%;
+    //z-index: 50;
+    width: 500px;
+    height: 500px;
+}
+
+
+
+.testing{
+    width:100%;
+    height:200px;
+    background-color: red;
+    padding:0;
+    margin:0;
+}
+.kkonner{
+    padding: 0;
+}
+input{
+    background-color: whitesmoke;
+    border: 1px solid #4fc8ff;
+    width: 100%;
+}
+tr:first-child > th:first-child{
+    border-top-left-radius: 25px;
+}
+tr:first-child > th:last-child{
+    border-top-right-radius: 25px;
+}
+tr:last-child > td:first-child{
+    border-bottom-left-radius: 25px;
+}
+tr:last-child > td:last-child{
+    border-bottom-right-radius: 25px;
+}
+input.text{
+    min-width: 90px;
+}
+input.fee{
+    width: 1.5em;
+    align-self: left;
+    text-align: left;
+}
+td.fee{
+    width: 100px;
+    text-align: left;
+}
+td:not(.location){
+    white-space: nowrap;
+}
+
+tr:nth-child(odd) > td:not(.contractContainer){
+    //background-color: rgba(79, 200, 255, 0.47);
+    position: relative;
+    background: linear-gradient(#2ecc71 50%, rgba(79, 200, 255, 0.47) 50%) left bottom;
+    background-size: 100% 200%;
+    transition: background-position 0.5s linear;
+}
+tr:nth-child(even) > td:not(.contractContainer){
+    //background-color: lightyellow;
+    position: relative;
+    background: linear-gradient(#2ecc71 50%, lightyellow 50%) left bottom;
+    background-size: 100% 200%;
+    transition: background-position 0.5s  linear;
+}
+
+tr.changeBackgroundColor > td{
+    //position: relative;
+    background-position: left top;
+    border-color: white;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
+    z-index: 200;
+}
+
+div#screenMask{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    background-color: black;
+    opacity: 0.7;
+}
+
+.buttonAddContract{
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background: transparent url('/images/Print%20Filled-25%20dark%20green.png')
+    center top no-repeat;
+    transition: visibility 0s 0s, background-image 0s 0.5s;
+}
+.buttonAddContract:hover{
+    transition-delay: 0s;
+    background-image: url(/images/Print%20Filled-25%20light%20green.png);
+    cursor: pointer;
+}
+tr.changeBackgroundColor .buttonAddContract{
+    transition-delay: 0.5s;
+    background-image: url(/images/Print%20Filled-25%20light%20green.png);
+    //animation: asd '1'2332 123asd ;
+    visibility: hidden;
+}
+
+td.contractContainer{
+    position: relative;
+    z-index: 200;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 0;
+    background-color: #2ecc71;
+    animation: slideDown 1s linear forwards 0.5s;
+}
+@keyframes slideDown {
+    100%{
+        height: 100px;
+    }
+}
+
+
+
+.buttonRemove{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    background: transparent url('/images/Close%20Window-25%20red.png')
+    center top no-repeat;
+}
+.buttonRemove:hover{
+    background-image: url(/images/Close%20Window-25%20black.png);
+    cursor: pointer;
+}
+.editable, .pointerCursor{
+    cursor: pointer;
+}
+.editable:hover{
+    color: green;
+}
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
