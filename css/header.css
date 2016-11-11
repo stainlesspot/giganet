@@ -233,7 +233,8 @@ header nav a.current{
 }
 .search-input{
 	vertical-align: middle;
-	width: 196px;
+	width: 80%;
+	max-width: 196px;
 	display: table-cell;
 	font-size: 1rem;
 	height: 26px;
