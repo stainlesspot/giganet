@@ -1,0 +1,19 @@
+*, *::before, *::after{
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+html{
+	box-sizing: border-box;
+}
+
+main, header, footer{
+	padding-left: 70px;
+	padding-right: 70px;
+}
+
+@media screen and (max-width: 768px){
+	main, header, footer{
+		padding: 0 15px;
+	}
+}
