@@ -33,7 +33,6 @@ $(document).ready(function (){
 			$('.login').removeClass('activated');
 			$('.login .wrapper').css('overflow', 'hidden');
 			clearTimeout(pendingRule);
-
 		}
 
 	})
