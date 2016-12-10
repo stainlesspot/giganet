@@ -44,7 +44,7 @@ header nav a:hover{
 	color: #4b89e6;
 }
 header nav a.current{
-	background-color: white;
+	background-color: #f0fdd0;
 	color: #4b89e6;
 	cursor: default;
 }
@@ -142,5 +142,9 @@ header nav .search{
 	}
 	header nav .search{
 		margin: 20px auto;
+		width: 100%;
 	}
+  header nav .search input{
+	  width: calc(100% - 26px);
+  }
 }

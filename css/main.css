@@ -5,6 +5,7 @@
 }
 html{
 	box-sizing: border-box;
+	background-color: #f0fdd0;
 }
 
 main, header, footer{

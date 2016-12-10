@@ -29,6 +29,8 @@
 				Quisque semper accumsan laoreet. Nullam vitae ligula hendrerit, pellentesque quam et, rutrum elit. Donec sed nisl congue, pretium eros quis, fringilla ipsum. Quisque rhoncus condimentum diam sed fermentum. Mauris quis euismod arcu. Pellentesque nunc elit, condimentum eget sollicitudin sed, consectetur fringilla felis. Aenean nec augue vel purus bibendum porttitor. Mauris sit amet ligula felis. Fusce turpis nunc, sodales sed ante at, vulputate tincidunt nulla. Duis sit amet mi a odio tempor eleifend. Phasellus elementum vehicula egestas. Vestibulum hendrerit aliquet odio eget auctor. Sed sit amet mauris erat. Vestibulum tempus eget libero in feugiat.
 			</p>
 		</article>
+		<script src="/javascript/getJson.js" async></script>
+		<button onclick="getJson('/javascript/test.json').then(res => alert(JSON.stringify(res)))">Get JSON</button>
 	</main>
 <?php include $_SERVER['DOCUMENT_ROOT'].'/php_templates/footer.php' ?>
 </body>

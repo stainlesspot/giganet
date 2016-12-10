@@ -10,6 +10,6 @@ echo '
 	<link href="/css/login.css" rel="stylesheet" type="text/css" />
 	<link href="/css/footer.css" rel="stylesheet" type="text/css" />
 	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="/javascript/jquery-3.1.1.js"></script>
 	<script src="/javascript/inputs.js"></script>
 ';
