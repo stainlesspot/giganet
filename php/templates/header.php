@@ -1,5 +1,5 @@
 <?php
-function generateHeader($currentButton){
+function generateHeader($activeCategory){
 	echo "
 	<!-- header.css -->
 	<header>
@@ -13,9 +13,9 @@ function generateHeader($currentButton){
 		</form>
 		<h1 class='logo'><a href='/'>GIGA NET</a></h1>
 		<nav>
-			<a " . (($currentButton === 'Начало') ? " class='current'" : "href='/'") . ">Начало</a>
-			<a " . (($currentButton === 'Продукти') ? " class='current'" : "href='/products/'") . ">Продукти</a>
-			<a " . (($currentButton === 'За нас') ? " class='current'" : "href='/about/'") . ">За нас</a>
+			<a " . (($activeCategory === 'Начало') ? " class='current'" : "href='/'") . ">Начало</a>
+			<a " . (($activeCategory === 'Продукти') ? " class='current'" : "href='/products'") . ">Продукти</a>
+			<a " . (($activeCategory === 'За нас') ? " class='current'" : "href='/about'") . ">За нас</a>
 			<div class='search'>
 				<input class='search-input' type='text' placeholder='Търсене...'/>
 				<svg class='search-button' height='26' viewBox='0 0 24 24' width='26' xmlns='http://www.w3.org/2000/svg'>
